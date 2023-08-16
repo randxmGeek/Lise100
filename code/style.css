@@ -1,0 +1,155 @@
+body {
+    color: #ffffff;
+    background: #080008;
+}
+#top_navbar {
+    border-style: double;
+    border-width:15px, 15px;
+    border-radius:25px;
+    border-color:#5c1616;
+    background-color: #cf4330;
+    width:fit-content;
+    margin: 5px;
+    top: auto;
+    left: 2px;
+}
+.top_navbar_button {
+    background-color: red;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid, thin;
+    border-radius: 15px;
+    font-size: medium;
+}
+.header {
+    height: 20vh;
+    width: fit-content;
+    padding: 0 8%;
+    background: #080008;
+    position: relative;
+    margin: auto;
+}
+header {
+    color: white;
+    font-size: xx-large;
+    font: Helvetica;
+    
+}
+nav {
+    display:flex; /*inline-block(???)*/
+    align-items: center;
+    justify-content: space-between;
+    width:fit-content;
+    margin-bottom: 5px;
+}
+#LMG_Logo {
+    width: 38%;
+    margin-bottom: 5px;
+}
+.nav-links {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.nav-links li {
+    display: inline-block; /*flex(???)*/
+    margin: 3px 15px; 
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after {
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-links li a:hover::after {
+    width: 100%;
+}
+.btn {
+    background: #ff3d00;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.text {
+    font: 15px Optima, sans-serif;
+    color: black;
+}
+.textdiv {
+    border-style:ridge;
+    border-width:20px, 20px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 30px;
+    background-color: #cf4330;
+    width: 70%;
+}
+h2 {
+    color: white;
+}
+
+/**/
+#returnTopButton {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 50%; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #cf4330; 
+    color: rgb(0, 0, 0); 
+    cursor: pointer; 
+    padding: 1%; 
+    border-radius: 15px;
+    width:fit-content; 
+    transition: .3s; 
+  }
+  
+#returnTopButton:hover {
+    border-radius: 5px;
+    background-color: rgb(207, 23, 23); 
+    color:#ffffff
+}
+.link {
+    color: #bb3107;
+    transition: .3s;
+}
+.link:hover {
+    color: #ff0000;
+    text-decoration-style:dashed;
+}
+.content_rightSide {
+    margin: 5px;
+}
+.content_rightSideText {
+    margin: 5px;
+    color:#000000;
+    border-style:ridge;
+    border-color:#ffffff;
+    background-color: #cf4330;
+    border-radius: 30px;
+    font: 15px Optima, sans-serif;
+    padding: 5px;
+}
+#responsiveDiv {
+    overflow: hidden;
+    display: flex;
+}
+.content {
+    margin-top: 5px;
+}

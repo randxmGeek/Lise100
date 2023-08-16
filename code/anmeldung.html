@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+
+        </div>
+        <form>
+            <label>Benutzername:</label>
+            <input type="text" name="Benutzername">
+            <input type="submit" value="Anmelden" onload ="BenutzerNameGueltig()"/>
+        </form>
+    </body>
+    <script>
+        var IPaddress =
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+            $("#gfg").html(data.ip);
+        });
+    </script>
+</html>
